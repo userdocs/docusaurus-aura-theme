@@ -5,7 +5,10 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import { themes as prismThemes } from "prism-react-renderer";
-import PrismDark from "./src/prism/themes/aura/aura-custom.ts";
+// import PrismDark from "./src/prism/themes/aura/aura-custom.ts";
+
+import test1 from "./src/prism/themes/test/aura-custom.ts";
+import test2 from "./src/prism/themes/test/synthwave84.ts";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -120,7 +123,7 @@ const config = {
         // darkTheme: prismThemes.dracula,
         additionalLanguages: ["bash", "yaml", "json", "nginx", "ini", "docker"],
         theme: prismThemes.github,
-        darkTheme: PrismDark,
+        darkTheme: test1,
       },
     }),
 };
