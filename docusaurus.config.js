@@ -9,8 +9,8 @@ import PrismDark from "./src/prism/themes/aura/aura-custom.ts";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "Aura Theme",
+  tagline: "",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -47,13 +47,6 @@ const config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -77,9 +70,8 @@ const config = {
             type: "docSidebar",
             sidebarId: "tutorialSidebar",
             position: "left",
-            label: "Tutorial",
+            label: "Examples",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/facebook/docusaurus",
             label: "GitHub",
@@ -92,12 +84,7 @@ const config = {
         links: [
           {
             title: "Docs",
-            items: [
-              {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
+            items: [],
           },
           {
             title: "Community",
@@ -120,10 +107,6 @@ const config = {
             title: "More",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
                 label: "GitHub",
                 href: "https://github.com/facebook/docusaurus",
               },
@@ -135,7 +118,8 @@ const config = {
       prism: {
         // theme: prismThemes.github,
         // darkTheme: prismThemes.dracula,
-        theme: PrismDark,
+        additionalLanguages: ["bash", "yaml", "json", "nginx", "ini", "docker"],
+        theme: prismThemes.github,
         darkTheme: PrismDark,
       },
     }),
