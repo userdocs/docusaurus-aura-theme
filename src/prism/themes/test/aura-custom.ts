@@ -150,7 +150,7 @@ const theme: PrismTheme = {
         {
             types: ["constant"],
             style: {
-                color: "#8464c6", // --purple-soft: #8464c6;
+                color: "#c17ac8", // --purple-soft: #8464c6;
             },
         },
 
